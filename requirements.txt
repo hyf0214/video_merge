@@ -1,0 +1,14 @@
+webvtt-py
+sentry_sdk
+imageio
+requests
+uvicorn
+pydantic
+moviepy
+starlette
+fastapi
+vod_python_sdk
+fastapi-healthcheck
+ffmpeg-python
+opencv-python-headless
+aiohttp
