@@ -88,9 +88,9 @@ class Video(FastAPI):
     def __init__(self):
         super().__init__()
         self.logger = self.init_logger()
-        self.cred = credential.Credential("AKIDsrihIyjZOBsjimt8TsN8yvv1AMh5dB44", "CPZcxdk6W39Jd4cGY95wvupoyMd0YFqW")
+        self.cred = credential.Credential("", "")
         self.client_vod = vod_client.VodClient(self.cred, "", self.clientProfile)
-        self.client_down = VodUploadClient("AKIDCR4fQDyonkfUME8AKTVZZWK2kBXfhgfX", "vnjnsu14425FNYr5RsMpNyibcsEglwdV")
+        self.client_down = VodUploadClient("", "")
         self.concurrent_upload_number = 5
         self.SubAppId = int(os.environ.get("VOD_SUB_APP_ID", 1500032974))
         self.merge_class_id = int(os.environ.get("VOD_MERGE_MATERIAL", 1196658))
